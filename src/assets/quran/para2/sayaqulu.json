@@ -1,0 +1,36 @@
+{
+    "paraId": "2",
+    "paraName": "Sayaqulu",
+    "surahs": [
+      {
+        "surahId": 3,
+        "surahName": "Al-Fatiha",
+        "pages": [
+          {
+            "page": 1,
+            "content": "assets/quran/para2/surah/01-al-fatiha/pages/01-page.txt",
+            "image": "assets/quran/para2/surah/01-al-fatiha/images/01-page.JPG",
+            "manzil": 1
+          }
+        ]
+      },
+      {
+        "surahId": 4,
+        "surahName": "Al-Baqarah",
+        "pages": [
+          {
+            "page": 1,
+            "content": "assets/quran/para2/surah/02-al-baqarah/pages/01-page.txt",
+            "image": "assets/quran/para2/surah/01-al-fatiha/images/01-page.JPG",
+            "manzil": 1
+          },
+          {
+            "page": 2,
+            "content": "assets/quran/para2/surah/02-al-baqarah/pages/02-page.txt",
+            "image": "assets/quran/para2/surah/01-al-fatiha/images/02-page.JPG",
+            "manzil": 1
+          }
+        ]
+      }
+    ]
+}

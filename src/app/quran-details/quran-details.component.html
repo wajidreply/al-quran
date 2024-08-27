@@ -1,0 +1,47 @@
+<div class="container">
+  <!-- Dropdown for Para Selection -->
+  <mat-form-field appearance="fill">
+    <mat-label>Select Para</mat-label>
+    <mat-select (selectionChange)="onParaChange($event)">
+      <mat-option *ngFor="let para of quranData?.quran.para;" [value]="para.paraPath">
+        {{para.paraId }} - {{ para.paraPath.split('/').pop()?.replace('.json', '') | uppercase }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Dropdown for Surah Selection -->
+  <mat-form-field appearance="fill" *ngIf="selectedPara" style="padding-left: 1rem;">
+    <mat-label>Select Surah</mat-label>
+    <mat-select (selectionChange)="onSurahChange($event)">
+      <mat-option *ngFor="let surah of selectedPara.surahs" [value]="surah">
+        {{ surah.surahName }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Display Surah and Pagination -->
+  <div *ngIf="selectedSurah">
+    <mat-card class="surah-card">
+      <mat-card-title>{{ selectedSurah.surahName }}</mat-card-title>
+      <mat-card-content>
+        <!-- Pagination Controls -->
+        <mat-paginator [length]="pages.length" [pageSize]="1" [pageSizeOptions]="[1]" (page)="onPageChange($event)">
+        </mat-paginator>
+
+        <!-- Pages Display -->
+        <ng-container *ngFor="let page of pages | slice:currentPageIndex:currentPageIndex + 1">
+          <mat-card>
+            <mat-card-content>
+              <ng-container *ngIf="setContent(pageContent[page.page] )"></ng-container>
+              <p>
+                {{ topText }}
+                <img [src]="page.image" alt="Image description" style=" float: left; height: 450px; width: 450px; padding-right: 30px;padding-top: 30px;">
+                {{ sideText }} {{ bottomText }}
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </ng-container>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

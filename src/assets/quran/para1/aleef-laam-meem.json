@@ -1,0 +1,36 @@
+{
+    "paraId": "1",
+    "paraName": "Alif-laam-meem",
+    "surahs": [
+      {
+        "surahId": 1,
+        "surahName": "Al-Fatiha",
+        "pages": [
+          {
+            "page": 1,
+            "content": "assets/quran/para1/surah/01-al-fatiha/pages/01-page.txt",
+            "image": "assets/quran/para1/surah/01-al-fatiha/images/01-page.JPG",
+            "manzil": 1
+          }
+        ]
+      },
+      {
+        "surahId": 1,
+        "surahName": "Al-Baqarah",
+        "pages": [
+          {
+            "page": 1,
+            "content": "assets/quran/para1/surah/02-al-baqarah/pages/01-page.txt",
+            "image": "assets/quran/para1/surah/02-al-baqarah/images/01-page.JPG",
+            "manzil": 1
+          },
+          {
+            "page": 2,
+            "content": "assets/quran/para1/surah/02-al-baqarah/pages/02-page.txt",
+            "image": "assets/quran/para1/surah/02-al-baqarah/images/02-page.JPG",
+            "manzil": 1
+          }
+        ]
+      }
+    ]
+}

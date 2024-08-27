@@ -1,0 +1,12 @@
+{
+  "quran": {
+    "para": [{
+      "paraId": "1",
+      "paraPath": "assets/quran/para1/aleef-laam-meem.json"
+    },
+    {
+      "paraId": "2",
+      "paraPath": "assets/quran/para2/sayaqulu.json"
+    }]
+  }
+}
